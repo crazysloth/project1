@@ -24,7 +24,21 @@ class Login extends StatelessWidget {
                     fontSize: 50
                   ),
                 ),
-                ElevatedButton(onPressed: () {}, child: Text('카카오 로그인'))
+                Container(
+                  margin: EdgeInsets.fromLTRB(0, 50, 0, 0),
+                ),
+                ElevatedButton(
+                  onPressed: () {},
+                  child: Text(
+                      '카카오 로그인',
+                    style: TextStyle(
+                      color: Colors.black
+                    ),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.yellow
+                  )
+                )
               ],
             ),
           ],
